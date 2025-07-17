@@ -13,6 +13,7 @@ from requests import get
 import imaplib
 import email
 from email.header import decode_header
+import os
 
 user_agents = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
@@ -26,6 +27,14 @@ report_reasons = [
     "Detected cheating in CS2 match",
     "Unfair advantage in CS2 match"
 ]
+
+if not os.path.exists("proxies.json"):
+    with open("proxies.json", "w") as f:
+        json.dump([], f)
+
+if not os.path.exists("accounts.json"):
+    with open("accounts.json", "w") as f:
+        json.dump([], f)
 
 with open("proxies.json", "r") as f:
     proxies_list = json.load(f)
