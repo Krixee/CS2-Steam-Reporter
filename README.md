@@ -55,4 +55,4 @@ Add your *Webshare* proxy list in HTTP format.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT]([https://choosealicense.com/licenses/mit/](https://github.com/Krixee/CS2-Steam-Reporter/blob/main/LICENSE))
